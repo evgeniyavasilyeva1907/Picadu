@@ -1,8 +1,24 @@
+@font-face{
+    font-family:"SFProDisplay-Regular" ;
+    src: local("SFProDisplay-Regular"),
+    url('../fonts/SFProDisplay-Regular.woff') format('woff')
+    url('../fonts/SFProDisplay-Regular.woff') format('woff2');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family:"SFProDisplay-Semibold" ;
+    src: local("SFProDisplay-Semibold"),
+    url('../fonts/SFProDisplay-Semibold.woff') format('woff')
+    url('../fonts/SFProDisplay-Semibold.woff') format('woff2');
+    font-weight: bold;
+}
+
 *{
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: "SFProDisplay-Regular" , sans-serif;
     background: #e5e5e5;
 }
 .header{
@@ -104,6 +120,7 @@ body{
 
 }
 .post-title{
+    font-family: "SFProDisplay-Semibold", sans-serif;
     margin-top: 0;
     margin-bottom: 19px;
     font-weight: 600;
@@ -200,7 +217,7 @@ width: 31%;
     margin-right: 17px;
 }
 .user-name{
-    font-weight: 600;
+    font-family: "SFProDisplay-Semibold", sans-serif;
     font-style: 16px;
     line-height: 24px;
     color: #595959;
@@ -271,7 +288,7 @@ width: 31%;
 }
 .card-title{
     margin: 0;
-    font-weight: 600;
+    font-family: "SFProDisplay-Semibold", sans-serif;
     font-style: 16px;
     line-height: 24px;
     color: #595959;
@@ -282,7 +299,7 @@ width: 31%;
 .card-body-title{
     margin: 0 0 10px;
     text-decoration: none;
-    font-weight: 600;
+    font-family: "SFProDisplay-Semibold", sans-serif;
     font-style: 16px;
     line-height: 24px;
     color: #d48806;
