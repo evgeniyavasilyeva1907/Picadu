@@ -2,7 +2,7 @@
     font-family:"SFProDisplay-Regular" ;
     src: local("SFProDisplay-Regular"),
     url('../fonts/SFProDisplay-Regular.woff') format('woff'),
-    url('../fonts/SFProDisplay-Regular.woff') format('woff2');
+    url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
     font-weight: normal;
 }
 
@@ -10,7 +10,7 @@
     font-family:"SFProDisplay-Semibold" ;
     src: local("SFProDisplay-Semibold"),
     url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
-    url('../fonts/SFProDisplay-Semibold.woff') format('woff2');
+    url('../fonts/SFProDisplay-Semibold.woff2') format('woff2');
     font-weight: bold;
 }
 
@@ -266,6 +266,8 @@ width: 31%;
     font-style: 16px;
     line-height: 24px;
     padding: 13px;
+    border: none;
+    cursor: pointer;
 }
 .button-new-post{
     display: flex;
@@ -336,6 +338,45 @@ width: 31%;
     text-align: center;
     color: #ffffff;
 }
+.add-post{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-title, .add-text{
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    padding: 23px 30px;
+    margin-bottom: 16px;
+}
+.add-text{
+min-height: 362px;
+}
+.add-button{
+    width: 100%;
+    max-width: 370px;
+    margin-right: 2%;
+}
+.add-post .button-outline{
+    margin-right: 1%;
+}
+.button-outline{
+    background: #fff;
+    border: 1px solid #ffc53d;
+    border-radius: 4px;
+    color:#ffc53d ;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+.button-outline .icon{
+    width: 14px;
+    height: 11px;
+    fill: #ffc53d;
+}
+
+
 @media(max-width: 990px){
     .sidebar{
         position: fixed;
@@ -390,6 +431,20 @@ width: 31%;
         margin: auto;
     }
 }
+@media(max-width:676px){
+    .add-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .add-button{
+        width: 100%;
+        max-width: 100%;
+    }
+    .add-post .button-outline{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
 @media(max-width:576px) {
     .post-footer{
         flex-direction: column;
@@ -405,4 +460,8 @@ width: 31%;
         order: 2;
         text-align: left;
     }
+    .add-button{
+        width: 100%;
+    }
+    
 }
